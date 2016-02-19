@@ -1,0 +1,10 @@
+<div class="container">
+  {{ ctrl.welcome }}
+  <div ng-repeat="site in ctrl.projects">
+    <pre ng-bind="site | json">
+
+    </pre>
+  </div>
+</div>
+
+<footer></footer>
