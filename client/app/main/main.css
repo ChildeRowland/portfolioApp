@@ -1,27 +1,48 @@
-.thing-form {
-  margin: 20px 0;
+body {
+  overflow-x: hidden;
+  background-color: #F5F5F5;
 }
 
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
+header {
+  background-color: #BCA7C1;
+  color: #504023;
+  padding: 1.5em 0 1.2em 0;
+  margin-bottom: 1em;
+  font-size: 16px;
 }
 
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+.extendleft {
+  padding-left: 3000px;
+  margin-left: -3000px;
+  overflow-x: hidden;
 }
 
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
+.extendright {
+  padding-right: 3000px;
+  margin-right: -3000px;
+  overflow-x: hidden;
 }
 
-.navbar-text {
-  margin-left: 15px;
+
+/* MAIN TABLE */
+
+.multi-line-cell span {
+  display: block;
+  margin-bottom: 1.1em;
+}
+
+.multi-line-cell label {
+  margin-bottom: 0em;
+}
+
+.project-tools {
+  display: inline;
+}
+
+.table th, .table td {
+    border: 0px !important;
+}
+
+.table > tbody + tbody {
+    border-top: 0px !important;
 }

@@ -6,13 +6,13 @@ angular.module('portfolioAppApp')
     {
       name: 'Project Monologues',
       description: 'An actors\' resource to search, add, and save monologues.  Anyone can browse, with some features reserved for users.  Curators check recently added materials for accuracy and consistency.',
-      tools: ['AngularJS', 'Express.js', 'Mongoose', 'MongoDB', 'uiRouter', 'uiBootstrap'],
-      url: 'http://protected-escarpment-86335.herokuapp.com/',
+      tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Mongoose', 'MongoDB', 'uiRouter', 'uiBootstrap', 'grunt', 'jasmine'],
+      url: 'http://protected-escarpment-86335.herokuapp.com',
       repo: 'https://github.com/ChildeRowland/ProjectMonologueFullstack.git'
     }, {
       name: 'Simon Workshop',
       description: 'Exercise replicating the Milton Bradly game Simon',
-      tools: ['AngularJS'],
+      tools: ['AngularJS', 'Bootstrap'],
       url: 'http://mysterious-gorge-35073.herokuapp.com',
       repo: 'https://github.com/ChildeRowland/simonApp.git'
     }, {
@@ -28,10 +28,11 @@ angular.module('portfolioAppApp')
 
   self.linkedin = 'https://www.linkedin.com/in/christopher-mehmed-8a161545';
 
-  self.welcome = 'sCheck';
-
   self.projects = PROJECTS;
 
-});
+  self.stringList = function (array) {
+    return array.join(' / ');
+  };
 
+});
 

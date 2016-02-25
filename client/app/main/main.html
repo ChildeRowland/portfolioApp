@@ -1,10 +1,42 @@
 <div class="container">
-  {{ ctrl.welcome }}
-  <div ng-repeat="site in ctrl.projects">
-    <pre ng-bind="site | json">
-
-    </pre>
-  </div>
+	<header class="extendleft extendright">	
+			<p class="col-md-10 col-md-offset-1">
+				Thanks for visiting my projects page.  Below are some web applications or workshops with hosted links and GitHub repositories.  You'll also find a url to Linkedin, and an email address if you would like to request a resumé.
+			</p>
+	</header>
+	<table class="table">
+		<tbody ng-repeat="project in ctrl.projects">
+			<tr>
+				<td class="multi-line-cell">
+					<h3 ng-bind="project.name"></h3>
+					<div class="col-md-11">
+						<label>
+							Description
+						</label>
+						<span ng-bind="project.description"></span>
+						<label>
+							Development tools include:
+						</label>
+						<span ng-bind="ctrl.stringList(project.tools)"></span>
+						<div ng-if="project.url">
+							<label>
+								Hosted
+							</label>
+							<a href="{{ project.url }}" target="_blank">
+								<span ng-bind="project.url"></span>
+							</a>
+						</div>
+						<label>
+							GitHub Repo
+						</label>
+						<a href="{{ project.repo }}" target="_blank">
+							<span ng-bind="project.repo"></span>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 
 <footer></footer>
