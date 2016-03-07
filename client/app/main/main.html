@@ -1,6 +1,10 @@
 <header>
 	<p class="welcome">
-		Welcome to my web development projects page.  Below are some web applications or workshops with hosted links and GitHub repositories.  You'll also find a url to Linkedin, and an email address if you would like to request a resumé.
+		Welcome to my web development projects page.  Below are some web applications or workshops with hosted links and/or GitHub repositories.  You'll also find urls to Linkedin and GitHub, and an email address if you would like to get in touch or request a resumé.
+	</p>
+
+	<p class="welcome">
+		I enjoy working with AngularJS and the MEAN stack, although I'm familar with Rudy on Rails, too.  I love challenges and passionate groups of people who care about high quality products and having a meaningful impact.
 	</p>
 </header>
 
@@ -27,12 +31,25 @@
 								<p ng-bind="project.url"></p>
 							</a>
 						</div>
-						<label>
-							GitHub Repo
-						</label>
-						<a href="{{ project.repo }}" target="_blank">
-							<p ng-bind="project.repo"></p>
-						</a>
+						<!-- Check for multiple git repos -->
+						<div ng-if="project.repo">
+							<label>
+								GitHub Repo
+							</label>
+							<a href="{{ project.repo }}" target="_blank">
+								<p ng-bind="project.repo"></p>
+							</a>
+						</div>
+						<div ng-if="project.multiRepos">
+							<label>
+								GitHub Repos
+							</label>
+							<div ng-repeat="repo in project.multiRepos">
+								<a href="{{ repo }}" target="_blank">
+									<p ng-bind="repo"></p>
+								</a>
+							</div>
+						</div>
 					</div>
 				</td>
 			</tr>
