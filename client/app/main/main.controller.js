@@ -11,7 +11,7 @@ angular.module('portfolioAppApp')
       repo: 'https://github.com/ChildeRowland/ProjectMonologueFullstack.git'
     }, {
       name: 'Reminder Application',
-      description: 'Fullstack application, with a SQL database. Although the \'todo\' style app has become almost obligitory for junior level developers, I\'ve enjoyed with the code.  I\'m still working through the front end, but check out the github repo to see the the backend in action.',
+      description: 'Fullstack application, with a SQL database. Although the \'todo\' style app has become almost obligitory for junior level developers, I\'ve enjoyed working with the code.  I\'m still working through the front end, but check out the github repo to see the the backend in action.',
       tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Sequelize', 'SQLite3', 'Postgres', 'ngResource', 'bcrypt'],
       repo: 'https://github.com/ChildeRowland/minder-list-app.git'
     }, {
