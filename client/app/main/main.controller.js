@@ -5,10 +5,15 @@ angular.module('portfolioAppApp')
 .value('PROJECTS', [
     {
       name: 'Project Monologues',
-      description: 'A resource for actors to search and study monologues.  Anyone can browse, with some features reserved for users.  Curators check recently added materials for accuracy and consistency.',
+      description: 'A resource for actors to search and study monologues.  Anyone can browse, with some features reserved for users.  Curators check recently added materials for accuracy and consistency.  Fullstack MEAN application.',
       tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Mongoose', 'MongoDB', 'uiRouter', 'uiBootstrap', 'grunt', 'jasmine'],
       url: 'https://cm-project-monologue.herokuapp.com',
       repo: 'https://github.com/ChildeRowland/ProjectMonologueFullstack.git'
+    }, {
+      name: 'Reminder Application',
+      description: 'Fullstack application, with a SQL database. Although the \'todo\' style app has become almost obligitory for junior level developers, I\'m happy with the code.  I\'m still working through the front end, check out the github reop to see the the backend in action.',
+      tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Sequelize', 'SQLite3', 'Postgres', 'ngResource', 'bcrypt'],
+      repo: 'https://github.com/ChildeRowland/minder-list-app.git'
     }, {
       name: 'Simon Workshop',
       description: 'Exercise replicating the Milton Bradly game Simon.',
