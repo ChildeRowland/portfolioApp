@@ -6,17 +6,29 @@
 	<p class="welcome">
 		I enjoy working with AngularJS and the MEAN stack, although I'm familar with Ruby on Rails, too.  I love challenges and passionate groups of people who care about high quality products and having a meaningful impact.
 	</p>
-	<button>
-		code
-	</button>
-	<button>
-		design
-	</button>
+	
+	<ul class="nav nav-pills">
+		<li role="presentation">
+			<a ng-click="ctrl.page = 'code'">
+				code
+			</a>
+		</li>
+		<li role="presentation" >
+			<a ng-click="ctrl.page = 'design'">
+				design
+			</a>
+		</li>
+	</ul>
+		  
 </header>
 
 <div class="container">
-	<div cm-code-ex></div>
-	<div cm-design-ex></div>
+	<div ng-if="ctrl.page === 'code'"
+		 cm-code-ex>
+	</div>
+	<div ng-if="ctrl.page === 'design'"
+		 cm-design-ex>
+	</div>
 </div>
 
 <footer></footer>

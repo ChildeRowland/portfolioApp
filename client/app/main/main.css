@@ -16,10 +16,6 @@ header {
   margin: 1.5em;
 }
 
-.container {
-  
-}
-
 
 /* MAIN TABLE */
 
@@ -45,11 +41,6 @@ header {
 }
 
 /* Images */
-
-/*.img-banner {
-    width: 200%;
-    margin-left: -100px;
-}*/
 
 .img-logo {
     width: 110vw;

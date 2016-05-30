@@ -38,7 +38,7 @@ angular.module('portfolioAppApp')
     image: 'app/main/img/nordstrom-chinook-centre-head.jpg'
   }, {
     name: 'Ernesto Neto\'s Anthropodino',
-    description: 'A massive sculpture, installed at the Wade Thompson Drill Hall in the Park Avenue Armory.  I worked on the Lighting Design team, assisting Pat Dignan, and managing the lighting install.',
+    description: 'A massive sculpture, installed at the Wade Thompson Drill Hall in the Park Avenue Armory.  I worked on the Lighting Design team, assisting Pat Dignan, and managing the lighting install. Seeing something like this is rare, being able to work on it is extraordinary.',
     url: 'http://www.armoryonpark.org/photo_gallery/slideshow/ernesto_neto_in_the_wade_thompson_drill_hall',
     image: 'app/main/img/anthropodino-head.jpg'
   }, {
@@ -49,11 +49,13 @@ angular.module('portfolioAppApp')
   }, {
     name: 'The Plain of Heaven',
     description: 'There is an under-appreciated type of curative endeavor, epitomized by this project.  Artists of many disciplines install their work in an abandoned space in an attempt to revitalize a neighborhood, or draw attention to a public project.  This show in NYC’s Meat Packing District, in tandem with the High Line park project, was a massive success with huge impact to the area.  I ran the lighting crew and assisted the lighting designer Pat Dignan.',
-    url: 'http://creativetime.org/projects/the-plain-of-heaven/'
+    url: 'http://creativetime.org/projects/the-plain-of-heaven/',
+    image: 'app/main/img/plain-of-heaven-head.jpg'
   },{
     name: 'La Mama',
-    description: 'The stored experimental theatre on West 4th ST, NYC was one of my first full-time design jobs, although there was a lot more to the job than just design.  La Mama has multiple spaces, typically running shows for three week engagements.  We’d load in a new show on a Monday, and have it ready to open in 2-3 days.  Although my specialty was lighting, I and everyone else worked on a wide swath of skills and tasks.  Carpentry, Sound, Painting, loading in and out, tech rehearsal, stage management, and whatever else needs to be done to get a show running successfully.',
-    url: 'http://lamama.org'
+    description: 'The storied experimental theatre on West 4th ST, NYC was one of my first full-time design jobs, although there was a lot more to the job than just design.  La Mama has multiple spaces, typically running shows for three week engagements.  We’d load in a new show on a Monday, and have it ready to open in 2-3 days.  Although my specialty was lighting, I and everyone else worked on a wide swath of skills and tasks.  Carpentry, Sound, Painting, loading in and out, tech rehearsal, stage management, and whatever else needs to be done to get a show running successfully.',
+    url: 'http://lamama.org',
+    image: 'app/main/img/la-mama-head.jpg'
   }
 ])
 
@@ -66,6 +68,8 @@ angular.module('portfolioAppApp')
   self.pages = PAGES;
   self.projects = PROJECTS;
   self.designEx = DESIGN;
+
+  self.page = self.pages[0];
 
   self.stringList = function (array) {
     return array.join(' / ');
