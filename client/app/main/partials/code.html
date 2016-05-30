@@ -1,0 +1,48 @@
+<div>
+	<table class="table">
+		<tbody ng-repeat="project in ctrl.projects">
+			<tr>
+				<td class="multi-line-cell">
+					<h3 ng-bind="project.name"></h3>
+					<div class="col-md-11">
+						<label>
+							Description
+						</label>
+						<span ng-bind="project.description"></span>
+						<label>
+							Development tools include:
+						</label>
+						<span ng-bind="ctrl.stringList(project.tools)"></span>
+						<div ng-if="project.url">
+							<label>
+								Hosted
+							</label>
+							<a href="{{ project.url }}" target="_blank">
+								<p ng-bind="project.url"></p>
+							</a>
+						</div>
+						<!-- Check for multiple git repos -->
+						<div ng-if="project.repo">
+							<label>
+								GitHub Repo
+							</label>
+							<a href="{{ project.repo }}" target="_blank">
+								<p ng-bind="project.repo"></p>
+							</a>
+						</div>
+						<div ng-if="project.multiRepos">
+							<label>
+								GitHub Repos
+							</label>
+							<div ng-repeat="repo in project.multiRepos">
+								<a href="{{ repo }}" target="_blank">
+									<p ng-bind="repo"></p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

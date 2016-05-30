@@ -2,6 +2,8 @@
 
 angular.module('portfolioAppApp')
 
+.value('PAGES', [ 'code', 'design' ])
+
 .value('PROJECTS', [
     {
       name: 'Project Monologues',
@@ -28,13 +30,27 @@ angular.module('portfolioAppApp')
     }
   ])
 
-.controller('MainController', function (PROJECTS) {
+.value('DESIGN', [
+  {
+    name: 'Nordstrom Energy-Savings Retrofit',
+    description: '',
+    url: 'https://www.bpa.gov/EE/Utility/marketing/casestudies/Nordstrom_casestudy.pdf'
+  }, {
+    name: 'David Byrne\'s Playing the Building',
+    description: '',
+    url: 'http://www.npr.org/templates/story/story.php?storyId=91106423'
+  }
+])
+
+.controller('MainController', function (PROJECTS, PAGES, DESIGN) {
   var self = this;
 
   self.linkedin = 'https://www.linkedin.com/in/christopher-mehmed-8a161545';
   self.github = 'https://github.com/ChildeRowland?tab=repositories';
 
+  self.pages = PAGES;
   self.projects = PROJECTS;
+  self.designEx = DESIGN;
 
   self.stringList = function (array) {
     return array.join(' / ');
