@@ -1,25 +1,25 @@
-<div>
+<div ng-repeat="project in ctrl.designEx">
+
+	<img ng-if="project.image"
+		 class="img-logo" 
+	 	 src="{{project.image}}">
+
 	<table class="table">
-		<tbody ng-repeat="project in ctrl.designEx">
+		<tbody>
 			<tr>
 				<td class="multi-line-cell">
 					<h3 ng-bind="project.name"></h3>
-					<div class="col-md-11">
-						<label>
-							Description
-						</label>
+					<div class="col-md-10">
 						<span ng-bind="project.description"></span>
-						<div ng-if="project.url">
-							<label>
-								link
-							</label>
+						<span ng-if="project.url">
 							<a href="{{ project.url }}" target="_blank">
-								<p ng-bind="project.url"></p>
+								learn more
 							</a>
-						</div>
+						</span>
 					</div>
 				</td>
 			</tr>
 		</tbody>
 	</table>
+
 </div>

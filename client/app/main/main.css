@@ -1,5 +1,6 @@
 body {
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 header {
@@ -13,6 +14,10 @@ header {
 
 .welcome {
   margin: 1.5em;
+}
+
+.container {
+  
 }
 
 
@@ -37,4 +42,16 @@ header {
 
 .table > tbody + tbody {
     border-top: 0px !important;
+}
+
+/* Images */
+
+/*.img-banner {
+    width: 200%;
+    margin-left: -100px;
+}*/
+
+.img-logo {
+    width: 110vw;
+    margin-left: -20%;
 }
