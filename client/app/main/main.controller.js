@@ -73,13 +73,29 @@ angular.module('portfolioAppApp')
 
   self.firstVist = true;
 
+  self.render = {
+    designView: function () {
+      return self.page === 'design';
+    },
+    codeView: function () {
+      return self.page === 'code'
+    },
+    aboutView: function () {
+      return self.page === 'about'
+    }
+  };
+
+  self.pager = function (page) {
+    self.page = page;
+
+    if (self.firstVist) {
+      self.firstVist = false;
+    }
+  }
+
   self.stringList = function (array) {
     return array.join(' / ');
   };
-
-  self.isFirstVisit = function () {
-    self.firstVist = false;
-  }
 
 });
 

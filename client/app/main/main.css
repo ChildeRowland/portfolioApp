@@ -43,12 +43,8 @@ header {
 
 /* NAVIGATION */
 
-.nav-pills > li.active > a {
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   background-color: #90A7BB;
-}
-
-.nav-pills > li.active > a.hover {
-  background-color: white;
 }
 
 

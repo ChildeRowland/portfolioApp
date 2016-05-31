@@ -2,14 +2,14 @@
 	<div class="container">
 		<ul class="nav nav-pills">
 			<li role="presentation"
-			    ng-class="{ active: ctrl.page === 'code' }">
-				<a ng-click="ctrl.page = 'code'; ctrl.isFirstVisit()">
+			    ng-class="{ active: ctrl.render.codeView() }">
+				<a ng-click="ctrl.pager('code'); ctrl.isFirstVisit()">
 					code
 				</a>
 			</li>
 			<li role="presentation"
-			 	ng-class="{ active: ctrl.page === 'design' }">
-				<a ng-click="ctrl.page = 'design'">
+			 	ng-class="{ active: ctrl.render.designView() }">
+				<a ng-click="ctrl.pager('design')">
 					design
 				</a>
 			</li>
@@ -22,12 +22,12 @@
 	</p>
 
 	<p class="welcome"
-	   ng-if="ctrl.page === 'code'">
+	   ng-if="ctrl.render.codeView()">
 		I enjoy working with AngularJS, the MEAN stack, javascript stacks, relational databases, and I'm familiar with Ruby on Rails, too.  I love challenges and passionate groups of people who care about high quality products and having a meaningful impact.  I find it really satisfying to rough out and deploy project ideas quickly so people can get a hands-on feel for an application.  I’m happiest working on core functionality or writing tests.
 	</p>
 
 	<p class="welcome"
-	   ng-if="ctrl.page === 'design'">
+	   ng-if="ctrl.render.designView()">
 		I came to programming from Art and Design, with a ton of projects I’m really proud of.  To be successful, we had to collaborate on elusive ideas, and solve unusual problems on the fly.  The Arts in NYC tend to require speed, adaptability, and a never quit attitude.  Here are a few interesting things I was lucky to work on.
 	</p>
 
@@ -35,12 +35,13 @@
 
 <div class="container">
 
-	<div ng-if="ctrl.page === 'code'"
+	<div ng-if="ctrl.render.codeView()"
 		 cm-code-ex>
 	</div>
-	<div ng-if="ctrl.page === 'design'"
+	<div ng-if="ctrl.render.designView()"
 		 cm-design-ex>
 	</div>
+
 </div>
 
 <footer></footer>
