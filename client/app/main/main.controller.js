@@ -71,9 +71,15 @@ angular.module('portfolioAppApp')
 
   self.page = self.pages[0];
 
+  self.firstVist = true;
+
   self.stringList = function (array) {
     return array.join(' / ');
   };
+
+  self.isFirstVisit = function () {
+    self.firstVist = false;
+  }
 
 });
 

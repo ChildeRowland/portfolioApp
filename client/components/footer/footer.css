@@ -8,6 +8,6 @@ footer.footer {
   min-width: 475px;
 }
 
-footer a {
-	display: block;
+footer a img {
+	max-width: 50px;
 }

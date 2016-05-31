@@ -1,28 +1,40 @@
 <header>
-	<p class="welcome">
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li role="presentation"
+			    ng-class="{ active: ctrl.page === 'code' }">
+				<a ng-click="ctrl.page = 'code'; ctrl.isFirstVisit()">
+					code
+				</a>
+			</li>
+			<li role="presentation"
+			 	ng-class="{ active: ctrl.page === 'design' }">
+				<a ng-click="ctrl.page = 'design'">
+					design
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<p class="welcome"
+	   ng-if="ctrl.firstVist">
 		Welcome to my web development projects page.  Below are some web applications or workshops with hosted links and/or GitHub repositories.  You'll also find urls to Linkedin and GitHub, and an email address if you would like to get in touch or request a resumé.
 	</p>
 
-	<p class="welcome">
-		I enjoy working with AngularJS and the MEAN stack, although I'm familar with Ruby on Rails, too.  I love challenges and passionate groups of people who care about high quality products and having a meaningful impact.
+	<p class="welcome"
+	   ng-if="ctrl.page === 'code'">
+		I enjoy working with AngularJS, the MEAN stack, javascript stacks, relational databases, and I'm familiar with Ruby on Rails, too.  I love challenges and passionate groups of people who care about high quality products and having a meaningful impact.  I find it really satisfying to rough out and deploy project ideas quickly so people can get a hands-on feel for an application.  I’m happiest working on core functionality or writing tests.
 	</p>
-	
-	<ul class="nav nav-pills">
-		<li role="presentation">
-			<a ng-click="ctrl.page = 'code'">
-				code
-			</a>
-		</li>
-		<li role="presentation" >
-			<a ng-click="ctrl.page = 'design'">
-				design
-			</a>
-		</li>
-	</ul>
-		  
+
+	<p class="welcome"
+	   ng-if="ctrl.page === 'design'">
+		I came to programming from Art and Design, with a ton of projects I’m really proud of.  To be successful, we had to collaborate on elusive ideas, and solve unusual problems on the fly.  The Arts in NYC tend to require speed, adaptability, and a never quit attitude.  Here are a few interesting things I was lucky to work on.
+	</p>
+
 </header>
 
 <div class="container">
+
 	<div ng-if="ctrl.page === 'code'"
 		 cm-code-ex>
 	</div>

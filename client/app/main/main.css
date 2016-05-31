@@ -40,9 +40,21 @@ header {
     border-top: 0px !important;
 }
 
-/* Images */
+
+/* NAVIGATION */
+
+.nav-pills > li.active > a {
+  background-color: #90A7BB;
+}
+
+.nav-pills > li.active > a.hover {
+  background-color: white;
+}
+
+
+/* IMAGES */
 
 .img-logo {
-    width: 110vw;
+    width: 116vw;
     margin-left: -20%;
 }
