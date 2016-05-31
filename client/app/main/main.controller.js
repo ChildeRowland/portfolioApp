@@ -35,27 +35,27 @@ angular.module('portfolioAppApp')
     name: 'Nordstrom Energy-Savings Retrofit',
     description: 'One of the longest running projects I\'ve been a part of, the Nordstrom Energy-Savings Program has spanned many years and the entire fleet of Nordstrom Stores.  I helped originate the project as a designer, and upon completion I was managing the project with oversight from Nordstom\'s special projects division. The link provided gives a snapshot of the project in the North West Region of the US.',
     url: 'https://www.bpa.gov/EE/Utility/marketing/casestudies/Nordstrom_casestudy.pdf',
-    image: 'app/main/img/nordstrom-chinook-centre-head.jpg'
+    image: 'assets/images/nordstrom-chinook-centre-head.jpg'
   }, {
     name: 'Ernesto Neto\'s Anthropodino',
     description: 'A massive sculpture, installed at the Wade Thompson Drill Hall in the Park Avenue Armory.  I worked on the Lighting Design team, assisting Pat Dignan, and managing the lighting install. Seeing something like this is rare, being able to work on it is extraordinary.',
     url: 'http://www.armoryonpark.org/photo_gallery/slideshow/ernesto_neto_in_the_wade_thompson_drill_hall',
-    image: 'app/main/img/anthropodino-head.jpg'
+    image: 'assets/images/anthropodino-head.jpg'
   }, {
     name: 'David Byrne\'s Playing the Building',
     description: 'A beautifully, seamingly simplistic idea, David Byrne toured this installation to a few locations, and I had the pleasure of working with the NYC install team at the Battery Maritime Building. Visitors were invited to play a small organ at the center of a large empty room, which intern, manipulated the stucture into sound.',
     url: 'http://www.npr.org/templates/story/story.php?storyId=91106423',
-    image: 'app/main/img/playing-the-building-head.jpg'
+    image: 'assets/images/playing-the-building-head.jpg'
   }, {
     name: 'The Plain of Heaven',
     description: 'There is an under-appreciated type of curative endeavor, epitomized by this project.  Artists of many disciplines install their work in an abandoned space in an attempt to revitalize a neighborhood, or draw attention to a public project.  This show in NYC’s Meat Packing District, in tandem with the High Line park project, was a massive success with huge impact to the area.  I ran the lighting crew and assisted the lighting designer Pat Dignan.',
     url: 'http://creativetime.org/projects/the-plain-of-heaven/',
-    image: 'app/main/img/plain-of-heaven-head.jpg'
+    image: 'assets/images/plain-of-heaven-head.jpg'
   },{
     name: 'La Mama',
     description: 'The storied experimental theatre on West 4th ST, NYC was one of my first full-time design jobs, although there was a lot more to the job than just design.  La Mama has multiple spaces, typically running shows for three week engagements.  We’d load in a new show on a Monday, and have it ready to open in 2-3 days.  Although my specialty was lighting, I and everyone else worked on a wide swath of skills and tasks.  Carpentry, Sound, Painting, loading in and out, tech rehearsal, stage management, and whatever else needs to be done to get a show running successfully.',
     url: 'http://lamama.org',
-    image: 'app/main/img/la-mama-head.jpg'
+    image: 'assets/images/la-mama-head.jpg'
   }
 ])
 
