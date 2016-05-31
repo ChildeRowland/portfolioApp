@@ -13,6 +13,12 @@
 					design
 				</a>
 			</li>
+			<li role="presentation"
+			 	ng-class="{ active: ctrl.render.aboutView() }">
+				<a ng-click="ctrl.pager('about')">
+					about
+				</a>
+			</li>
 		</ul>
 	</div>
 
@@ -31,6 +37,11 @@
 		I came to programming from Art and Design, with a ton of projects I’m really proud of.  To be successful, we had to collaborate on elusive ideas, and solve unusual problems on the fly.  The Arts in NYC tend to require speed, adaptability, and a never quit attitude.  Here are a few interesting things I was lucky to work on.
 	</p>
 
+	<p class="welcome"
+	   ng-if="ctrl.render.aboutView()">
+		Take a look at my <a href="{{ ctrl.github }}" target="_blank">Github</a> or <a href="{{ ctrl.linkedin }}" target="_blank">LinkedIn</a>.  Need a resume?  Request the most resent at chrismehmed@gmail.com.
+	</p>
+
 </header>
 
 <div class="container">
@@ -40,6 +51,9 @@
 	</div>
 	<div ng-if="ctrl.render.designView()"
 		 cm-design-ex>
+	</div>
+	<div ng-if="ctrl.render.aboutView()"
+		 cm-about-ex>
 	</div>
 
 </div>

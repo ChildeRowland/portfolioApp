@@ -15,4 +15,11 @@ angular.module('portfolioAppApp')
 		templateUrl: 'app/main/partials/design.html',
 		scope: false
 	}
+})
+
+.directive('cmAboutEx', function () {
+	return {
+		templateUrl: 'app/main/partials/about.html',
+		scope: false
+	}
 });

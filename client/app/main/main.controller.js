@@ -2,7 +2,7 @@
 
 angular.module('portfolioAppApp')
 
-.value('PAGES', [ 'code', 'design' ])
+.value('PAGES', [ 'code', 'design', 'about' ])
 
 .value('PROJECTS', [
     {
