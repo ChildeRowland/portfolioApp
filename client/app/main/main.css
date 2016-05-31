@@ -62,5 +62,16 @@ header {
   margin: 3em 1.1em 1em 1.1em;
 }
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 500px) {
+
+  .img-logo {
+    width: 130vw;
+    margin-left: -20%;
+  }
+  
+}
+
 
 
