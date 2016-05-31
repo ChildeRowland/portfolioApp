@@ -64,7 +64,8 @@ header {
 
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 470px) {
+and (max-device-width : 450px) 
+and (orientation: portrait) {
 
   .img-logo {
     width: 150vw;
