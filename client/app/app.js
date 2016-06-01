@@ -6,7 +6,8 @@ angular.module('portfolioAppApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ngAnimate'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider

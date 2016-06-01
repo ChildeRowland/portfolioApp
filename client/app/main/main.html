@@ -22,24 +22,24 @@
 		</ul>
 	</div>
 
-	<p class="welcome"
+	<p class="fade welcome"
 	   ng-if="ctrl.firstVist">
 		Welcome to my web development projects page.  Below are some web applications or workshops with hosted links and/or GitHub repositories.  You'll also find urls to Linkedin and GitHub, and an email address if you would like to get in touch or request a resumé.
 	</p>
 
-	<p class="welcome"
+	<p class="fade welcome"
 	   ng-if="ctrl.render.codeView()">
 		I enjoy working with AngularJS, the MEAN stack, javascript stacks, relational databases, and I'm familiar with Ruby on Rails, too.  I love challenges and passionate groups of people who care about high quality products and having a meaningful impact.  I find it really satisfying to rough out and deploy project ideas quickly so people can get a hands-on feel for an application.  I’m happiest working on core functionality or writing tests.
 	</p>
 
-	<p class="welcome"
+	<p class="fade welcome"
 	   ng-if="ctrl.render.designView()">
 		I came to programming from Art and Design, with a ton of projects I’m really proud of.  To be successful, we had to collaborate on elusive ideas, and solve unusual problems on the fly.  The Arts in NYC tend to require speed, adaptability, and a never quit attitude.  Here are a few interesting things I was lucky to work on.
 	</p>
 
-	<p class="welcome"
+	<p class="fade welcome"
 	   ng-if="ctrl.render.aboutView()">
-		Take a look at my <a href="{{ ctrl.github }}" target="_blank">Github</a> or <a href="{{ ctrl.linkedin }}" target="_blank">LinkedIn</a>.  Need a resume?  Request the most resent at chrismehmed@gmail.com.
+		Take a look at my <a href="{{ ctrl.github }}" target="_blank">Github</a> or <a href="{{ ctrl.linkedin }}" target="_blank">LinkedIn</a>.  Need a resume?  Like to see some references?  Request the most resent via chrismehmed@gmail.com.
 	</p>
 
 </header>
@@ -47,12 +47,15 @@
 <div class="container">
 
 	<div ng-if="ctrl.render.codeView()"
+	     class="entrance"
 		 cm-code-ex>
 	</div>
 	<div ng-if="ctrl.render.designView()"
+		 class="entrance"
 		 cm-design-ex>
 	</div>
 	<div ng-if="ctrl.render.aboutView()"
+		 class="entrance"
 		 cm-about-ex>
 	</div>
 
