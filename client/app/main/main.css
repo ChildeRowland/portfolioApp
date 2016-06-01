@@ -6,7 +6,8 @@ body {
 
 header {
   background-color: #D6C0DC;
-  color: #504023;
+  background-image: url(http://1-background.com/images/canvas/canvas-hemp-silk.jpg);
+  color: #3A2C12;
   text-align: center;
   padding: 30px;
   font-size: 16px;
@@ -107,3 +108,6 @@ and (orientation: portrait) {
 
 
 
+/*
+http://1-background.com/images/clouds/clouds-seamless-background-blue1.jpg
+http://1-background.com/images/canvas/canvas-hemp-silk.jpg*/
