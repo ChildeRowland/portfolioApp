@@ -6,6 +6,12 @@ angular.module('portfolioAppApp')
 
 .value('PROJECTS', [
     {
+      name: 'Photo Recall',
+      description: 'This is my first Angular2 deployment, still in early development.  There is a developers log in the repo, if you\'d like to see the up-to-date process.  When complete, Photo Recall will be a memory testing game.  Users can apply to become Game Masters and upload new game sessions.',
+      tools: ['Angular2', 'NodeJS', 'ExpressJS', 'Mongoose', 'MongoDB', 'jasmine', 'gulp', 'Bootstrap'],
+      url: 'https://photorecall.herokuapp.com',
+      repo: 'https://github.com/ChildeRowland/photo-recall-MEAN2.0.git'
+    }, {
       name: 'Project Monologues',
       description: 'A resource for actors to search and study monologues.  Anyone can browse, with some features reserved for users.  Curators check recently added materials for accuracy and consistency.  Fullstack MEAN application.',
       tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Mongoose', 'MongoDB', 'uiRouter', 'uiBootstrap', 'grunt', 'jasmine'],
@@ -64,6 +70,7 @@ angular.module('portfolioAppApp')
 
   self.linkedin = 'https://www.linkedin.com/in/christopher-mehmed-8a161545';
   self.github = 'https://github.com/ChildeRowland?tab=repositories';
+  self.codefights = 'https://codefights.com/profile/childerowland';
 
   self.pages = PAGES;
   self.projects = PROJECTS;
