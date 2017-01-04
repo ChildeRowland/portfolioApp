@@ -7,7 +7,7 @@ angular.module('portfolioAppApp')
 .value('PROJECTS', [
     {
       name: 'Photo Recall',
-      description: 'This is my first Angular2 deployment, still in early development.  There is a developers log in the repo, if you\'d like to see the up-to-date process.  When complete, Photo Recall will be a memory testing game.  Users can apply to become Game Masters and upload new game sessions.',
+      description: 'This is my first major Angular2 deployment, still in development.  There is a developers log in the repo, if you\'d like to see the up-to-date process.  When complete, Photo Recall will be a memory testing game.  Users can apply to become Game Masters and upload new game sessions.',
       tools: ['Angular2', 'NodeJS', 'ExpressJS', 'Mongoose', 'MongoDB', 'jasmine', 'gulp', 'Bootstrap'],
       url: 'https://photorecall.herokuapp.com',
       repo: 'https://github.com/ChildeRowland/photo-recall-MEAN2.0.git'
@@ -18,16 +18,22 @@ angular.module('portfolioAppApp')
       url: 'https://cm-project-monologue.herokuapp.com',
       repo: 'https://github.com/ChildeRowland/ProjectMonologueFullstack.git'
     }, {
-      name: 'Reminder Application',
-      description: 'Fullstack application, with a SQL database. Although the \'todo\' style app has become almost obligitory for junior level developers, I\'ve enjoyed working with the code.  I\'m still working through the front end, but check out the github repo to see the the backend in action.',
-      tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Sequelize', 'SQLite3', 'Postgres', 'ngResource', 'bcrypt'],
-      repo: 'https://github.com/ChildeRowland/minder-list-app.git'
+      name: 'IMDB Actor Quiz',
+      description: 'A hand coded single page application, that uses the IMDB API.  Users can search by actor and take a simple quiz about his/her movies.  This is a challenge to create a SPA without frameworks or libraries.',
+      tools: ['NodeJS', 'ExpressJS', 'IMDB API'],
+      url: 'https://arkadium-full-stack.herokuapp.com',
+      repo: 'https://github.com/ChildeRowland/arkadium-imdb-api'
     }, {
       name: 'Simon Workshop',
       description: 'Exercise replicating the Milton Bradly game Simon.',
       tools: ['AngularJS', 'Bootstrap'],
       url: 'https://cm-simon-exercise.herokuapp.com',
       repo: 'https://github.com/ChildeRowland/simonApp.git'
+    }, {
+      name: 'Reminder Application',
+      description: 'Fullstack application, with a SQL database. Although the \'todo\' style app has become almost obligitory for junior level developers, I\'ve enjoyed working with the code.  This application is not deployed, but check out the github repo to see the the backend.',
+      tools: ['AngularJS', 'NodeJS', 'ExpressJS', 'Sequelize', 'SQLite3', 'Postgres', 'ngResource', 'bcrypt'],
+      repo: 'https://github.com/ChildeRowland/minder-list-app.git'
     }, {
       name: 'Weather Getter',
       description: 'Single page app, using the Open Weather Api to get temperature by city.  Also refactored with a commed line interface.  User can get weather information by specifying city, or allow ipinfo.io to set location via IP address.',
